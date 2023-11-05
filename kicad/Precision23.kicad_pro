@@ -91,9 +91,9 @@
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
-        "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_edge_clearance": "ignore",
+        "silk_over_copper": "ignore",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
@@ -120,12 +120,12 @@
         "min_microvia_drill": 0.09999999999999999,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.7999999999999999,
-        "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
+        "min_text_height": 0.74676,
+        "min_text_thickness": 0.065024,
+        "min_through_hole_diameter": 0.254,
         "min_track_width": 0.0,
-        "min_via_annular_width": 0.09999999999999999,
-        "min_via_diameter": 0.5,
+        "min_via_annular_width": 0.127,
+        "min_via_diameter": 0.508,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.0,
@@ -173,7 +173,9 @@
       ],
       "track_widths": [
         0.0,
-        0.1524
+        0.1524,
+        0.254,
+        1.016
       ],
       "via_dimensions": [
         {
@@ -422,8 +424,8 @@
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
+        "microvia_diameter": 0.127,
+        "microvia_drill": 0.127,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
@@ -492,24 +494,12 @@
   },
   "sheets": [
     [
-      "aa3a436d-dede-46d3-9ed0-c0cd323c7787",
-      "Hour hand"
-    ],
-    [
-      "85d5ea70-0bd0-4beb-863d-47b7b57146b5",
-      "Minute hand"
-    ],
-    [
-      "f8c91f0e-326d-486c-b6b3-3ac117b555c3",
-      "Second hand"
-    ],
-    [
-      "f2b5efa3-3b02-43d7-b46f-6da84e0f33b1",
-      "Third hand"
-    ],
-    [
       "bdd70cc5-4573-4ffd-a837-e689d69d580d",
       "Controller"
+    ],
+    [
+      "7f841cc2-3b6a-405d-8dac-e49f3fadb4bc",
+      "Charlieplex"
     ],
     [
       "9151f981-b383-4946-8df4-92ef46ef2206",
