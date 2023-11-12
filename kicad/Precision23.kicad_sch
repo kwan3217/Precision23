@@ -2131,12 +2131,12 @@
     )
     (pin "1" (uuid 8a3ed9f9-c452-4727-9478-78bfc46946de))
     (pin "8" (uuid 2aa82ce2-6961-4e25-ae00-1db9cf5d275a))
-    (pin "2" (uuid 9e46f2f1-a8e7-4433-8db1-94a0348406ca))
-    (pin "7" (uuid c1c95baf-4c19-4653-bd8e-67adc711cf3d))
-    (pin "3" (uuid 7e5b3078-ca55-4d24-8d50-fb3e1d9f3b22))
-    (pin "6" (uuid 5d396ac7-4699-4ee6-984b-a310ff3c5cd0))
-    (pin "4" (uuid d32b1aee-8515-4a8c-a647-5f36437ffec3))
-    (pin "5" (uuid e11e2023-3116-4c79-8233-e2cf7964dd8d))
+    (pin "2" (uuid 9e46f2f1-a8e7-4433-8db1-94a0348406cb))
+    (pin "7" (uuid c1c95baf-4c19-4653-bd8e-67adc711cf3e))
+    (pin "3" (uuid 7e5b3078-ca55-4d24-8d50-fb3e1d9f3b23))
+    (pin "6" (uuid 5d396ac7-4699-4ee6-984b-a310ff3c5cd1))
+    (pin "4" (uuid d32b1aee-8515-4a8c-a647-5f36437ffec4))
+    (pin "5" (uuid e11e2023-3116-4c79-8233-e2cf7964dd8e))
     (instances
       (project "Precision23"
         (path "/9151f981-b383-4946-8df4-92ef46ef2206"
@@ -2504,12 +2504,12 @@
     )
     (pin "1" (uuid b60eed43-c2f3-464b-bf9e-3673cf14fa0f))
     (pin "8" (uuid ca4c179f-c08d-46de-9966-926cd26c1fcd))
-    (pin "2" (uuid 9e46f2f1-a8e7-4433-8db1-94a0348406ca))
-    (pin "7" (uuid c1c95baf-4c19-4653-bd8e-67adc711cf3d))
-    (pin "3" (uuid 7e5b3078-ca55-4d24-8d50-fb3e1d9f3b22))
-    (pin "6" (uuid 5d396ac7-4699-4ee6-984b-a310ff3c5cd0))
-    (pin "4" (uuid d32b1aee-8515-4a8c-a647-5f36437ffec3))
-    (pin "5" (uuid e11e2023-3116-4c79-8233-e2cf7964dd8d))
+    (pin "2" (uuid 9e46f2f1-a8e7-4433-8db1-94a0348406cc))
+    (pin "7" (uuid c1c95baf-4c19-4653-bd8e-67adc711cf3f))
+    (pin "3" (uuid 7e5b3078-ca55-4d24-8d50-fb3e1d9f3b24))
+    (pin "6" (uuid 5d396ac7-4699-4ee6-984b-a310ff3c5cd2))
+    (pin "4" (uuid d32b1aee-8515-4a8c-a647-5f36437ffec5))
+    (pin "5" (uuid e11e2023-3116-4c79-8233-e2cf7964dd8f))
     (instances
       (project "Precision23"
         (path "/9151f981-b383-4946-8df4-92ef46ef2206"
@@ -3490,6 +3490,23 @@
         (path "/9151f981-b383-4946-8df4-92ef46ef2206"
           (reference "#PWR0334") (unit 1)
         )
+      )
+    )
+  )
+
+  (sheet (at 234.95 97.79) (size 31.75 19.05) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 1a2b8347-97e8-424d-be9f-5c13140d4224)
+    (property "Sheetname" "Untitled Sheet" (at 234.95 97.0784 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "kwan_kicad_lib/controllers/LPC2387.kicad_sch" (at 234.95 117.4246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Precision23"
+        (path "/9151f981-b383-4946-8df4-92ef46ef2206" (page "8"))
       )
     )
   )
