@@ -1635,7 +1635,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 07086dfb-470f-4a2b-866d-e6524990ab45)
   )
-  (label "Px0" (at 102.87 53.34 0) (fields_autoplaced)
+  (label "Sx0" (at 102.87 53.34 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 12605245-e876-4d1b-835c-7433d00b57e4)
   )
@@ -1647,27 +1647,27 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 16fa8431-d0ae-4d2c-b6f6-80f8c17f6f29)
   )
-  (label "Px7" (at 102.87 106.68 0) (fields_autoplaced)
+  (label "Sx7" (at 102.87 106.68 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1e0e59df-94d9-49d5-b13a-d9dbd13e4305)
   )
-  (label "Px9" (at 102.87 111.76 0) (fields_autoplaced)
+  (label "Sx9" (at 102.87 111.76 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1f46f9c1-3e2f-4fa1-9a12-9047cc9a7f71)
   )
-  (label "Q4x" (at 129.54 63.5 0) (fields_autoplaced)
+  (label "S4x" (at 129.54 63.5 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 2c994d94-35ee-4a37-a4c5-b2fd956a31d4)
   )
-  (label "Px4" (at 102.87 99.06 0) (fields_autoplaced)
+  (label "Sx4" (at 102.87 99.06 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 4b54ecd3-e5f5-4f97-a001-cb1de17f61cb)
   )
-  (label "Q3x" (at 129.54 57.15 0) (fields_autoplaced)
+  (label "S3x" (at 129.54 57.15 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 53096821-4189-4c89-99f5-8863d58f28c4)
   )
-  (label "Px6" (at 102.87 104.14 0) (fields_autoplaced)
+  (label "Sx6" (at 102.87 104.14 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5f3d0514-d982-4b11-ac80-7c9b56012854)
   )
@@ -1675,31 +1675,31 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 6df6108f-c0f9-4bd4-be43-e5ae639662e7)
   )
-  (label "Px1" (at 102.87 55.88 0) (fields_autoplaced)
+  (label "Sx1" (at 102.87 55.88 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 6f2015a8-9331-431e-93f2-10f5e236cc6d)
   )
-  (label "Px5" (at 102.87 101.6 0) (fields_autoplaced)
+  (label "Sx5" (at 102.87 101.6 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 7e5b35a8-c940-4cd4-95f7-ef8f4a054128)
   )
-  (label "Q0x" (at 129.54 38.1 0) (fields_autoplaced)
+  (label "S0x" (at 129.54 38.1 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 7f279976-44ad-4bab-a888-b011fa1460c4)
   )
-  (label "Q1x" (at 129.54 44.45 0) (fields_autoplaced)
+  (label "S1x" (at 129.54 44.45 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 80263a78-f4ae-4bd5-93b5-20d68c953a94)
   )
-  (label "Px3" (at 102.87 96.52 0) (fields_autoplaced)
+  (label "Sx3" (at 102.87 96.52 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid a63a5f91-0df6-4bf2-8114-259bc9805d08)
   )
-  (label "Px2" (at 102.87 93.98 0) (fields_autoplaced)
+  (label "Sx2" (at 102.87 93.98 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid b5c4e1e0-74f9-48c1-bd3c-e9e7579a5533)
   )
-  (label "Q5x" (at 129.54 69.85 0) (fields_autoplaced)
+  (label "S5x" (at 129.54 69.85 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c6c4d787-8ad5-4b03-b171-813902994af8)
   )
@@ -1707,11 +1707,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c9d31576-a2b1-4057-aa28-ce7c0ee089c0)
   )
-  (label "Px8" (at 102.87 109.22 0) (fields_autoplaced)
+  (label "Sx8" (at 102.87 109.22 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid dee8120e-9110-4b55-b824-a8d24adeaa2a)
   )
-  (label "Q2x" (at 129.54 50.8 0) (fields_autoplaced)
+  (label "S2x" (at 129.54 50.8 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid efba963f-2f3e-41d2-bb7b-95af1493bed6)
   )
@@ -1758,7 +1758,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 256.54 40.64 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 033b6ad6-d772-41bb-a210-df945a21d52d)
     (property "Reference" "D009" (at 259.08 39.3065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -1796,7 +1796,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 180.34 59.69 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 05599be8-e8b5-46eb-908a-4726bf54fc5f)
     (property "Reference" "D033" (at 182.88 58.3565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -1834,7 +1834,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 231.14 46.99 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 070591bd-f681-4ef9-b589-b070f9d9a708)
     (property "Reference" "D017" (at 233.68 45.6565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -1872,7 +1872,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 193.04 46.99 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 09ca1b11-bb2a-4ba6-9dc8-518d3b916e6e)
     (property "Reference" "D014" (at 195.58 45.6565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -1910,7 +1910,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 142.24 53.34 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0bc0d207-7750-41bc-9b75-7aaf799d1768)
     (property "Reference" "D020" (at 144.78 52.0065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -1948,7 +1948,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 193.04 53.34 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0be9b711-5c09-46f1-b084-673e83e489e1)
     (property "Reference" "D024" (at 195.58 52.0065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -1986,7 +1986,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 231.14 59.69 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0e2f6f27-f1cc-40ee-b1d2-f8c9196c4a75)
     (property "Reference" "D037" (at 233.68 58.3565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2024,7 +2024,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 193.04 40.64 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 10b935d9-13c2-4517-b9f8-46fd34fa2305)
     (property "Reference" "D004" (at 195.58 39.3065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2062,7 +2062,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 243.84 66.04 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1243e769-2a3b-44ad-b276-7928cdb6894a)
     (property "Reference" "D048" (at 246.38 64.7065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2100,7 +2100,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 218.44 66.04 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1311c777-a051-44d0-9f39-af9d18c14b93)
     (property "Reference" "D046" (at 220.98 64.7065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2138,7 +2138,7 @@
   )
 
   (symbol (lib_id "KwanSystems:RP4") (at 124.46 57.15 0) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 159e0723-93c1-43d0-b110-1d5b4d6df38a)
     (property "Reference" "R001" (at 124.46 52.07 0)
       (effects (font (size 1.143 1.143)))
@@ -2176,7 +2176,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 218.44 59.69 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 18626cbf-6c71-4539-8af7-709f2541f222)
     (property "Reference" "D036" (at 220.98 58.3565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2214,7 +2214,7 @@
   )
 
   (symbol (lib_id "KwanSystems:RP4") (at 124.46 38.1 0) (unit 4)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1df64630-8f8e-4f24-b1be-bfe0baf97e50)
     (property "Reference" "R001" (at 124.46 33.02 0)
       (effects (font (size 1.143 1.143)))
@@ -2252,7 +2252,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 142.24 40.64 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 20a8da1d-4885-4787-a5c1-d7ac4e3d5619)
     (property "Reference" "D000" (at 144.78 39.3065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2290,7 +2290,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 180.34 72.39 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 22cf632b-1b17-4644-b56f-0d8ac9a8deda)
     (property "Reference" "D053" (at 182.88 71.0565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2328,7 +2328,7 @@
   )
 
   (symbol (lib_id "KwanSystems:RP4") (at 124.46 82.55 0) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2a5ca037-63fe-46fe-945a-e57f95a60f77)
     (property "Reference" "R002" (at 124.46 77.47 0)
       (effects (font (size 1.143 1.143)))
@@ -2366,7 +2366,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 231.14 53.34 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2e820568-3390-47c4-bcc7-778bf29ee3fa)
     (property "Reference" "D027" (at 233.68 52.0065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2404,7 +2404,7 @@
   )
 
   (symbol (lib_id "KwanSystems:RP4") (at 124.46 63.5 0) (unit 4)
-    (in_bom yes) (on_board no) (dnp no)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 33eb0f68-bf52-436d-82ba-f987d3643d33)
     (property "Reference" "R002" (at 124.46 58.42 0)
       (effects (font (size 1.143 1.143)))
@@ -2442,7 +2442,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 167.64 40.64 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 39ecd659-e375-407e-a754-960d1b875af5)
     (property "Reference" "D002" (at 170.18 39.3065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2480,7 +2480,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 180.34 40.64 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3b53e610-667b-456a-906e-fdabd8228a96)
     (property "Reference" "D003" (at 182.88 39.3065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2518,7 +2518,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 167.64 59.69 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3cf7966f-0974-4aec-ba7d-2daca4f8d09d)
     (property "Reference" "D032" (at 170.18 58.3565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2556,7 +2556,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 256.54 59.69 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3fc46b61-5edd-47b8-bc6d-7536975ba2b3)
     (property "Reference" "D039" (at 259.08 58.3565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2594,7 +2594,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 218.44 46.99 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 41d90d28-3004-4d60-83d9-42fd11fb94b7)
     (property "Reference" "D016" (at 220.98 45.6565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2632,7 +2632,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 154.94 46.99 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 447754a2-431f-430c-8225-45c05cd680ab)
     (property "Reference" "D011" (at 157.48 45.6565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2670,7 +2670,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 154.94 53.34 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 451443c0-fd93-452d-84e8-4cdb7f259dac)
     (property "Reference" "D021" (at 157.48 52.0065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2708,7 +2708,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 205.74 66.04 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 467534e0-b5c7-47f1-8a02-6a1d22def607)
     (property "Reference" "D045" (at 208.28 64.7065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2746,7 +2746,7 @@
   )
 
   (symbol (lib_id "74xx:74HC595") (at 91.44 104.14 0) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4bd412a8-7a4b-409a-88bf-e49a7f804ac2)
     (property "Reference" "U002" (at 93.6341 86.36 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -2795,7 +2795,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 154.94 40.64 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5030a374-b023-4b5a-b9b3-44f77a3a5d66)
     (property "Reference" "D001" (at 157.48 39.3065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2833,7 +2833,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 243.84 46.99 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 535ba951-c359-4198-8a76-fa1ce17bb96f)
     (property "Reference" "D018" (at 246.38 45.6565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2871,7 +2871,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 193.04 59.69 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 553f130a-ce57-401c-9585-d5ba6423873a)
     (property "Reference" "D034" (at 195.58 58.3565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2909,7 +2909,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 205.74 72.39 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5c4e81d3-06a2-4ef1-99e2-456376a82d33)
     (property "Reference" "D055" (at 208.28 71.0565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2947,7 +2947,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 193.04 72.39 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5c866be7-84b4-4a38-bdf6-0e34f9eaede4)
     (property "Reference" "D054" (at 195.58 71.0565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2985,7 +2985,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 218.44 53.34 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5e448eee-91f4-4764-be37-c081b588a195)
     (property "Reference" "D026" (at 220.98 52.0065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3023,7 +3023,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 154.94 59.69 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 65f9feba-f80a-4cc9-8ec5-9cace50be6c9)
     (property "Reference" "D031" (at 157.48 58.3565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3061,7 +3061,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 231.14 66.04 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 665dafb8-ab6f-4998-92bd-00fb1494928d)
     (property "Reference" "D047" (at 233.68 64.7065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3099,7 +3099,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 218.44 72.39 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 67b61998-c4d9-4ff6-b3b4-82bc5bbe146b)
     (property "Reference" "D056" (at 220.98 71.0565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3137,7 +3137,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 218.44 40.64 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 681a16f2-7756-4971-b1ab-e499683b16c3)
     (property "Reference" "D006" (at 220.98 39.3065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3175,7 +3175,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 243.84 59.69 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 70a7ef85-b8b1-4ff2-b720-e75dfbf8798b)
     (property "Reference" "D038" (at 246.38 58.3565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3213,7 +3213,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 193.04 66.04 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 71b09386-b372-4a13-9282-c3222a5af07e)
     (property "Reference" "D044" (at 195.58 64.7065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3251,7 +3251,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 167.64 72.39 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7210bb98-af86-4e8c-b8f2-95b2e98a34b0)
     (property "Reference" "D052" (at 170.18 71.0565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3289,7 +3289,7 @@
   )
 
   (symbol (lib_id "74xx:74HC595") (at 91.44 48.26 0) (unit 1)
-    (in_bom yes) (on_board no) (dnp no)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 83d7e8bb-f4ae-4531-83fc-f2958f8b55e2)
     (property "Reference" "U001" (at 93.6341 30.48 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -3338,7 +3338,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 256.54 66.04 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8469eccb-fef9-4708-8f66-543e79464d53)
     (property "Reference" "D049" (at 259.08 64.7065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3376,7 +3376,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 243.84 72.39 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 86175b08-6c52-41c4-9550-b2db34137822)
     (property "Reference" "D058" (at 246.38 71.0565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3414,7 +3414,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 231.14 40.64 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 88a37b91-7ba4-4de7-bcca-ed2e3ce8af67)
     (property "Reference" "D007" (at 233.68 39.3065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3452,7 +3452,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 142.24 59.69 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 88fe80e9-7e73-4592-bc53-7291a79b27d5)
     (property "Reference" "D030" (at 144.78 58.3565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3490,7 +3490,7 @@
   )
 
   (symbol (lib_id "Device:C_Small") (at 68.58 63.5 0) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8b03392d-cb6d-48b3-ae83-bc8214fbd632)
     (property "Reference" "C001" (at 71.12 62.2363 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -3522,7 +3522,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 180.34 53.34 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8d4644cc-965e-4f6e-9e41-cdbeb3843425)
     (property "Reference" "D023" (at 182.88 52.0065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3560,7 +3560,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 205.74 46.99 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8e574dd7-85e6-42fd-88ff-b65a69f30934)
     (property "Reference" "D015" (at 208.28 45.6565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3598,7 +3598,7 @@
   )
 
   (symbol (lib_id "KwanSystems:RP4") (at 124.46 69.85 0) (unit 3)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9536c79b-4d4e-45d0-9b08-b7139e6e5fbf)
     (property "Reference" "R002" (at 124.46 64.77 0)
       (effects (font (size 1.143 1.143)))
@@ -3636,7 +3636,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 154.94 66.04 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 95c7ab19-b539-427a-829e-86d5a93d8cfb)
     (property "Reference" "D041" (at 157.48 64.7065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3674,7 +3674,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 231.14 72.39 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 96c19443-7f7e-42e3-9147-af467014466b)
     (property "Reference" "D057" (at 233.68 71.0565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3712,7 +3712,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 205.74 53.34 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9e1e5a36-a3ed-44e1-a618-b3c92ec09ec4)
     (property "Reference" "D025" (at 208.28 52.0065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3750,7 +3750,7 @@
   )
 
   (symbol (lib_id "KwanSystems:RP4") (at 124.46 76.2 0) (unit 2)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9efa528a-4eef-4737-b460-bc10f8089a25)
     (property "Reference" "R002" (at 124.46 71.12 0)
       (effects (font (size 1.143 1.143)))
@@ -3788,7 +3788,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 256.54 72.39 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a0768fb0-54c7-47d4-a604-cfdb89208b0d)
     (property "Reference" "D059" (at 259.08 71.0565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3826,7 +3826,7 @@
   )
 
   (symbol (lib_id "KwanSystems:RP4") (at 124.46 44.45 0) (unit 3)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a7c22f73-931f-4635-952a-2b855ace4c3e)
     (property "Reference" "R001" (at 124.46 39.37 0)
       (effects (font (size 1.143 1.143)))
@@ -3864,7 +3864,7 @@
   )
 
   (symbol (lib_id "KwanSystems:RP4") (at 124.46 50.8 0) (unit 2)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b000bf00-bfe6-4177-8718-586db9ff18a4)
     (property "Reference" "R001" (at 124.46 45.72 0)
       (effects (font (size 1.143 1.143)))
@@ -3902,7 +3902,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 180.34 46.99 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b65efe65-333b-415d-bd7b-4dd3659f4b81)
     (property "Reference" "D013" (at 182.88 45.6565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3940,7 +3940,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 167.64 46.99 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b80fa23d-6d12-42ae-a9e2-3a9e85de7ac5)
     (property "Reference" "D012" (at 170.18 45.6565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3978,7 +3978,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 256.54 53.34 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b98ba7d7-e451-42bd-8860-5437a4d374a4)
     (property "Reference" "D029" (at 259.08 52.0065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4016,7 +4016,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 142.24 66.04 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bab2c7ee-1fff-4a51-9f5a-5b3276febc3c)
     (property "Reference" "D040" (at 144.78 64.7065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4054,7 +4054,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 142.24 72.39 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bb4013a0-1548-4e32-9aa5-8bc2683bdc05)
     (property "Reference" "D050" (at 144.78 71.0565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4092,7 +4092,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 205.74 59.69 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bcf43c04-b95b-47fb-b860-bfd2072175a1)
     (property "Reference" "D035" (at 208.28 58.3565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4130,7 +4130,7 @@
   )
 
   (symbol (lib_id "Device:C_Small") (at 66.04 91.44 0) (unit 1)
-    (in_bom yes) (on_board no) (dnp no)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid cbbb823e-901a-49d0-8378-1dbb5c667cd8)
     (property "Reference" "C002" (at 59.69 90.17 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -4162,7 +4162,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 180.34 66.04 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d6887ff7-75d3-4370-b013-00347e6b9d6d)
     (property "Reference" "D043" (at 182.88 64.7065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4200,7 +4200,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 154.94 72.39 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e617f083-d0ab-4b06-91cc-30465b9af97a)
     (property "Reference" "D051" (at 157.48 71.0565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4238,7 +4238,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 243.84 53.34 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ed28e314-d490-41a1-9d83-e4cd38c88f5d)
     (property "Reference" "D028" (at 246.38 52.0065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4276,7 +4276,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 142.24 46.99 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ee20623c-1e04-4643-9672-222e1787b8c5)
     (property "Reference" "D010" (at 144.78 45.6565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4314,7 +4314,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 256.54 46.99 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ef79856b-fa19-4ad3-a7ad-af7b5007c7a9)
     (property "Reference" "D019" (at 259.08 45.6565 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4352,7 +4352,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 205.74 40.64 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f470b3e4-b99a-460a-9a7a-cac032949a26)
     (property "Reference" "D005" (at 208.28 39.3065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4390,7 +4390,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 243.84 40.64 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f5a1b72d-7255-4771-bfc0-7e31ef67e579)
     (property "Reference" "D008" (at 246.38 39.3065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4428,7 +4428,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 167.64 66.04 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f7b3ce4f-0168-4157-8575-b4b934930ced)
     (property "Reference" "D042" (at 170.18 64.7065 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4466,7 +4466,7 @@
   )
 
   (symbol (lib_id "Device:LED_Small") (at 167.64 53.34 90) (unit 1)
-    (in_bom yes) (on_board no) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fac15749-bbcb-4a12-a41b-a86e0a37b18b)
     (property "Reference" "D022" (at 170.18 52.0065 90)
       (effects (font (size 1.27 1.27)) (justify right))
