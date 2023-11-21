@@ -1,0 +1,17 @@
+# BOM and diode curves
+*.csv
+
+# LibreOffice lock files
+.~*
+
+# Top and bottom separate boards -- always regenerate from main board
+Precision23 Bottom.kicad_pcb
+Precision23 Top.kicad_pcb
+
+# XML netlists
+*.xml
+
+# 3D models of boards -- re-export from board
+*.wrl
+*.step
+
