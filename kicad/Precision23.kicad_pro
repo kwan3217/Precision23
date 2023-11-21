@@ -65,7 +65,7 @@
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
-        "courtyards_overlap": "ignore",
+        "courtyards_overlap": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
@@ -84,7 +84,7 @@
         "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
-        "missing_courtyard": "ignore",
+        "missing_courtyard": "warning",
         "missing_footprint": "warning",
         "net_conflict": "warning",
         "npth_inside_courtyard": "ignore",
@@ -538,12 +538,20 @@
       "Nano"
     ],
     [
-      "9151f981-b383-4946-8df4-92ef46ef2206",
-      ""
+      "9f66be35-2744-413f-8b31-a996047a434b",
+      "Top board"
     ],
     [
       "b677ca37-64a4-4c57-a7aa-64d766dbf7fc",
       "Regulator"
+    ],
+    [
+      "9151f981-b383-4946-8df4-92ef46ef2206",
+      ""
+    ],
+    [
+      "b9b5a9b9-9a45-4bb4-8a5d-f3809553447a",
+      "Bottom Board"
     ]
   ],
   "text_variables": {}
