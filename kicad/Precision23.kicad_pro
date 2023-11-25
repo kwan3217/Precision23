@@ -534,16 +534,8 @@
       "Third hand"
     ],
     [
-      "9407dcb2-4240-4949-9fc7-e511c818f8d4",
-      "Nano"
-    ],
-    [
       "9f66be35-2744-413f-8b31-a996047a434b",
       "Top board"
-    ],
-    [
-      "24c60a37-33c7-45d6-a04e-0fe066b21c96",
-      "Regulator"
     ],
     [
       "9151f981-b383-4946-8df4-92ef46ef2206",
@@ -552,14 +544,6 @@
     [
       "b9b5a9b9-9a45-4bb4-8a5d-f3809553447a",
       "Bottom Board"
-    ],
-    [
-      "b65da452-3627-4cc2-97b6-b38ecc1d595c",
-      "Serial Switchboard"
-    ],
-    [
-      "35c6054e-906f-4e5f-98c7-943ff89a0176",
-      "GPS"
     ]
   ],
   "text_variables": {}
