@@ -526,14 +526,6 @@
       "Minute hand"
     ],
     [
-      "f8c91f0e-326d-486c-b6b3-3ac117b555c3",
-      "Second hand"
-    ],
-    [
-      "f2b5efa3-3b02-43d7-b46f-6da84e0f33b1",
-      "Third hand"
-    ],
-    [
       "9f66be35-2744-413f-8b31-a996047a434b",
       "Top board"
     ],
@@ -544,6 +536,14 @@
     [
       "b9b5a9b9-9a45-4bb4-8a5d-f3809553447a",
       "Bottom Board"
+    ],
+    [
+      "f8c91f0e-326d-486c-b6b3-3ac117b555c3",
+      "Second hand"
+    ],
+    [
+      "f2b5efa3-3b02-43d7-b46f-6da84e0f33b1",
+      "Third hand"
     ]
   ],
   "text_variables": {}
