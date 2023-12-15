@@ -26,9 +26,7 @@ mil=25400
 inch=1000*mil
 
 #These are all in mils
-centerXf=3500
-centerXb=centerXf+4000
-centerX=(centerXf,centerXb)
+centerX=3500
 centerY=3500
 flatDiodeRad=1460
 domeDiodeRad=flatDiodeRad-10
@@ -47,7 +45,7 @@ ringSpacing=math.ceil(viaRad)+minSpacing+ringWidth/2
 outerViaRad=outerRingRad+ringSpacing
 print("Ring Spacing: %f"%ringSpacing)
 
-handnames=["Hour","Minute","Second","Third"]
+handnames=["Second","Third"]
 
 
 #Ugly hack from https://electronics.stackexchange.com/q/437065
@@ -60,7 +58,7 @@ for i in range(numlayers):
 print(layertable)
 
 
-def polar(*,i_board:int,r:int,theta:float):
+def polar(*,r:int,theta:float):
     """
     Calculate position from polar coordinates
 
@@ -72,12 +70,12 @@ def polar(*,i_board:int,r:int,theta:float):
 
     Note: All coordinates are converted to integer mils before being converted to kicad global coordinates
     """
-    x=int(centerX[i_board]+r*np.sin(np.radians(theta)))
-    y=int(centerY         -r*np.cos(np.radians(theta)))
+    x=int(centerX+r*np.sin(np.radians(theta)))
+    y=int(centerY-r*np.cos(np.radians(theta)))
     return pcbnew.VECTOR2I(int(x*mil),int(y*mil))
 
 
-def polar_slot(*,i_board:int,slot:int,m:int,i_ring:int):
+def polar_slot(*,slot:int,m:int,i_ring:int):
     """
     Calculate position from polar slot coordinates
 
@@ -93,7 +91,7 @@ def polar_slot(*,i_board:int,slot:int,m:int,i_ring:int):
 
     Note: All coordinates are converted to integer mils before being converted to kicad global coordinates
     """
-    return polar(i_board=i_board,r=outerRingRad-i_ring*ringSpacing,theta=1.5*(slot*4+m))
+    return polar(r=outerRingRad-i_ring*ringSpacing,theta=1.5*(slot*4+m))
 
 
 def trace(*,signame:str,xy0:pcbnew.VECTOR2I,xy1:pcbnew.VECTOR2I,layer:str="F.Cu",width:int=6):
@@ -106,6 +104,7 @@ def trace(*,signame:str,xy0:pcbnew.VECTOR2I,xy1:pcbnew.VECTOR2I,layer:str="F.Cu"
     :param layer: Layer to draw trace on, must match one of the copper layers
     :param width: Width of trace in mils
     """
+    print(f"{signame=}")
     net=board.GetNetsByName()[signame]
     track=pcbnew.PCB_TRACK(board)
     track.SetStart(xy0)
@@ -117,7 +116,7 @@ def trace(*,signame:str,xy0:pcbnew.VECTOR2I,xy1:pcbnew.VECTOR2I,layer:str="F.Cu"
     board.Add(track)
 
 
-def signame(*,i_board:int=None,i_hand:int=None,i_boardhand:int=None,tens:int='x',ones:int='x'):
+def signame(*,i_hand:int=None,eights:int='x',ones:int='x'):
     """
     Calculate a signal name from hand indexes
 
@@ -127,18 +126,17 @@ def signame(*,i_board:int=None,i_hand:int=None,i_boardhand:int=None,tens:int='x'
     :param tens: Tens digit of signal slot. Either tens or ones must be passed, but not both.
     :param ones: Ones digit of signal slot
     """
-    if i_boardhand is None:
-        i_boardhand=i_board*2+i_hand
-    return f"/{handnames[i_boardhand]} hand/{handnames[i_boardhand][0]}{tens}{ones}"
+    print(f"{i_hand=}")
+    return f"/Bottom Board/{handnames[i_hand]} hand/{handnames[i_hand][0]}{eights}{ones}"
 
 
-def trace_polar(*,i_hand:int,tens:int='x',ones:int='x',
+def trace_polar(*,i_hand:int,eights:int='x',ones:int='x',
                   r0:int,theta0:float,r1:int,theta1:float,**kwargs):
     """
     Create matching traces on both boards
     
     :param i_hand: Front (0) or back (1) hands. Hour and Second are front hands, Minute and Third are back.
-    :param tens:   Tens digit of slot
+    :param eights:   Tens digit of slot
     :param ones:   Ones digit of slot
     :param r0:     radius of end 0 in mils
     :param theta0: azimuth of end 0 in degrees, clockwise from 12:00
@@ -146,21 +144,21 @@ def trace_polar(*,i_hand:int,tens:int='x',ones:int='x',
     :param theta1: azimuth of end 1
     :param kwargs: Other arguments passed through to trace()
     """
-    for i_board in range(2):
-        trace(signame=signame(i_board=i_board,i_hand=i_hand,tens=tens,ones=ones),
-            xy0=polar(i_board=i_board,r=r0,theta=theta0),
-            xy1=polar(i_board=i_board,r=r1,theta=theta1),
+    for i_board in range(1):
+        trace(signame=signame(i_hand=i_hand,eights=eights,ones=ones),
+            xy0=polar(r=r0,theta=theta0),
+            xy1=polar(r=r1,theta=theta1),
             **kwargs)
 
 
-def trace_polarslot(*,i_hand:int,tens:int='x',ones:int='x',
+def trace_polarslot(*,i_hand:int,eights:int='x',ones:int='x',
                     slot0:int,m0:int,i_ring0:int,
                     slot1:int,m1:int,i_ring1:int,**kwargs):
     """
     Create matching traces on both boards using slot coordinates
 
     :param i_hand: Front (0) or back (1) hands
-    :param tens:   Tens digit
+    :param eights: eights digit
     :param ones:   Ones digit
     :param slot0: Azimuth slot of end 0
     :param m0: Azimuth subslot of end 0
@@ -170,10 +168,10 @@ def trace_polarslot(*,i_hand:int,tens:int='x',ones:int='x',
     :param i_ring1: Ring slot of end 1
     :param kwargs: Other arguments passed through to trace()
     """
-    for i_board in range(2):
-        trace(signame=signame(i_board=i_board,i_hand=i_hand,tens=tens,ones=ones),
-              xy0=polar_slot(i_board=i_board,slot=slot0,m=m0,i_ring=i_ring0),
-              xy1=polar_slot(i_board=i_board,slot=slot1,m=m1,i_ring=i_ring1),
+    for i_board in range(1):
+        trace(signame=signame(i_hand=i_hand,eights=eights,ones=ones),
+              xy0=polar_slot(slot=slot0,m=m0,i_ring=i_ring0),
+              xy1=polar_slot(slot=slot1,m=m1,i_ring=i_ring1),
               **kwargs)
 
 
@@ -199,48 +197,47 @@ def via(*,signame:str,xy:pcbnew.VECTOR2I,layer0:str="F.Cu",layer1:str="B.Cu",dri
     board.Add(pvia)
 
 
-def via_polar(*,i_hand:int,tens:int='x',ones:int='x',
+def via_polar(*,i_hand:int,eights:int='x',ones:int='x',
               r:int,theta:int,**kwargs):
     """
     Create matching vias on both boards
     
     :param i_hand: Front (0) or back (1) hands. Hour and Second are front hands, Minute and Third are back.
-    :param tens:   Tens digit of slot
+    :param eights:   eights digit of slot
     :param ones:   Ones digit of slot
     :param r:      Distance from center in mils
     :param theta:  azimuth in degrees, clockwise from 12:00
     :param kwargs: Other arguments passed through to via()
     """
-    for i_board in range(2):
-        via(signame=signame(i_board=i_board,i_hand=i_hand,tens=tens,ones=ones),
-            xy=polar(i_board=i_board,r=r,theta=theta),
-            **kwargs)
+    via(signame=signame(i_hand=i_hand,eights=eights,ones=ones),
+        xy=polar(r=r,theta=theta),
+        **kwargs)
 
 
-def via_polarslot(*,i_hand:int,tens:int='x',ones:int='x',
+def via_polarslot(*,i_hand:int,eights:int='x',ones:int='x',
                   slot:int,m:int,i_ring:int,
                   **kwargs):
     """
     Create matching traces on both boards using slot coordinates
 
     :param i_hand: Front (0) or back (1) hands
-    :param tens:   Tens digit
+    :param eights:   Eights digit
     :param ones:   Ones digit
     :param slot: Azimuth slot
     :param m: Azimuth subslot
     :param i_ring: Ring index
     :param kwargs: Other arguments passed through to via()
     """
-    for i_board in range(2):
-        via(signame=signame(i_board=i_board,i_hand=i_hand,tens=tens,ones=ones),
-            xy=polar_slot(i_board=i_board,slot=slot,m=m,i_ring=i_ring),
+    for i_board in range(1):
+        via(signame=signame(i_hand=i_hand,eights=eights,ones=ones),
+            xy=polar_slot(slot=slot,m=m,i_ring=i_ring),
             **kwargs)
 
 
 def place_diodes():
-    for i_hand,i_board,rad in zip(range(4),(0,0,1,1),(flatDiodeRad,domeDiodeRad,domeDiodeRad,domeDiodeRad)):
+    for i_hand,rad in zip(range(2),(domeDiodeRad,domeDiodeRad)):
         for i_diode in range(60):
-            modref="D%01d%02d"%(i_hand,i_diode)
+            modref="D%01d%02d"%(i_hand+2,i_diode)
             print(modref)
             mod=board.FindFootprintByReference(modref)
             #for pad in mod.Pads():
@@ -253,25 +250,23 @@ def place_diodes():
             #        pad.GetSize().x, pad.GetSize().y
             #     ))
             theta=i_diode*6
-            mod.SetPosition(polar(i_board,rad,theta))
+            mod.SetPosition(polar(r=rad,theta=theta))
             if(mod.IsFlipped()!=(i_hand==1)):
                 mod.SetLayerAndFlip(layertable["B.Cu"])
             mod.SetOrientation(pcbnew.EDA_ANGLE(-theta+180*i_hand,pcbnew.DEGREES_T))
     pcbnew.Refresh()
 
 
-#place_diodes()
+place_diodes()
 #raise AssertionError("Stop!")
 
 
 def erase_rings():
     nets=board.GetNetsByName()
     rlimit=int(outerRingRad-23.1*ringSpacing)
-    for i_boardhand in range(4):
-        i_board=i_boardhand//2
-        i_hand=i_boardhand%2
-        Ps=[signame(i_boardhand=i_boardhand,ones=i) for i in range(10)]
-        Qs=[signame(i_boardhand=i_boardhand,tens=i) for i in range( 6)]
+    for i_hand in range(2):
+        Ps=[signame(i_hand=i_hand,ones  =i) for i in range(8)]
+        Qs=[signame(i_hand=i_hand,eights=i) for i in range(8)]
         for this_signame in Ps+Qs:
             print(f"Erasing net {this_signame}:")
             net=nets[this_signame]
@@ -280,8 +275,8 @@ def erase_rings():
                  x1=track.GetEnd  ().x/mil
                  y0=track.GetStart().y/mil
                  y1=track.GetEnd  ().y/mil
-                 r0=np.sqrt((x0-centerX[i_board])**2+(y0-centerY)**2)
-                 r1=np.sqrt((x1-centerX[i_board])**2+(y1-centerY)**2)
+                 r0=np.sqrt((x0-centerX)**2+(y0-centerY)**2)
+                 r1=np.sqrt((x1-centerX)**2+(y1-centerY)**2)
                  print(f"Checking track {i_track}, {r0=},{r1=},{rlimit=}")
                  if r0>rlimit and r1>rlimit:
                      board.Remove(track)
@@ -291,7 +286,7 @@ def erase_rings():
 erase_rings()
 #raise AssertionError("Stop!")
 
-def arc(*,i_hand:int,tens:int='x',ones:int='x',
+def arc(*,i_hand:int,eights:int='x',ones:int='x',
                i_ring:int,
                slot0:int=0,m0:int=0,
                slot1:int=0,m1:int=0,
@@ -300,7 +295,7 @@ def arc(*,i_hand:int,tens:int='x',ones:int='x',
     Create matching arcs on both boards using slot coordinates
 
     :param i_hand: Front (0) or back (1) hands
-    :param tens:   Tens digit
+    :param eights:   eights digit
     :param ones:   Ones digit
     :param i_ring: Ring index
     :param slot0: Azimuth slot 0
@@ -312,7 +307,7 @@ def arc(*,i_hand:int,tens:int='x',ones:int='x',
     # Do everything internally in subslots, since it's easier to iterate.
     # Even though subslots are conventionally [-1..2], they are unbounded.
     for m in range(slot0*4+m0,slot1*4+m1):
-        trace_polarslot(i_hand=i_hand,tens=tens,ones=ones,
+        trace_polarslot(i_hand=i_hand,eights=eights,ones=ones,
              slot0=0,m0=m  ,i_ring0=i_ring,
              slot1=0,m1=m+1,i_ring1=i_ring,
              **kwargs)
@@ -323,8 +318,8 @@ def rings():
     Draw complete rings for each ones position on each hand (total of 20 rings)
     """
     for i_hand in range(2):
-        for ones in range(10):
-            arc(i_hand=i_hand,ones=ones,i_ring=i_hand*10+ones+2,m0=0,m1=240)
+        for ones in range(8):
+            arc(i_hand=i_hand,ones=ones,i_ring=i_hand*8+ones+2,m0=0,m1=240)
             pcbnew.Refresh()
 
 
@@ -334,16 +329,17 @@ rings()
 
 def arcs():
     """
-    Draw partial rings for each tens position on each hand. Total of 12 arcs, but
-    all 6 of each hand can go in the same ring, so only 2 rings total.
+    Draw partial rings for each tens position on each hand. Total of 16 arcs, but
+    all 8 of each hand can go in the same ring, so only 2 rings total.
     """
     for i_hand in range(2):
-        for tens in range(6):
-            print(f"Laying arc {signame(i_hand=i_hand,i_board=0,tens=tens)} and {signame(i_hand=i_hand,i_board=1,tens=tens)}")
-            dm=-1 if i_hand==1 else 2
-            arc(i_hand=i_hand,tens=tens,
-                slot0=tens*10,m0=dm,
-                slot1=tens*10,m1=35+dm+1,i_ring=1-i_hand)
+        for eights in range(8):
+            print(f"Laying arc {signame(i_hand=i_hand,eights=eights)}")
+            dm=-1 if i_hand==1 else 1
+            dslot=7 if eights!=7 else 3
+            arc(i_hand=i_hand,eights=eights,
+                slot0=eights*8,m0=dm,
+                slot1=eights*8+dslot,m1=dm+1,i_ring=1-i_hand)
             pcbnew.Refresh()
 
 
@@ -351,7 +347,7 @@ arcs()
 #raise AssertionError("Stop!")
 
 
-def radial(*,i_hand:int,tens:int='x',ones:int='x',
+def radial(*,i_hand:int,eights:int='x',ones:int='x',
              i_ring:int,theta:float,rad_ofs:int,theta_ofs:float):
     """
     Create matching radial traces on both boards. Each radial runs from 
@@ -359,7 +355,7 @@ def radial(*,i_hand:int,tens:int='x',ones:int='x',
 
 
     :param i_hand: Front (0) or back (1) hands
-    :param tens:   Tens digit
+    :param eights:   eights digit
     :param ones:   Ones digit
     :param i_ring: Ring index of inner end. All traces end near the diodes.
     :param kwargs: Other arguments passed through to trace()
@@ -371,43 +367,43 @@ def radial(*,i_hand:int,tens:int='x',ones:int='x',
     else:
        outerRad=diodeRad
     # X0x from ring to inward of center of diode
-    trace_polar(i_hand=i_hand,tens=tens,ones=ones,
+    trace_polar(i_hand=i_hand,eights=eights,ones=ones,
        r0=ringRad,theta0=theta,
        r1=outerRad+rad_ofs,theta1=theta,layer="B.Cu")
     # Via at ring
-    via_polar(i_hand=i_hand,tens=tens,ones=ones,
+    via_polar(i_hand=i_hand,eights=eights,ones=ones,
        r=ringRad,theta=theta)
     if i_hand==0:
         # Via at outer end of radial to front side
-        via_polar(i_hand=i_hand,tens=tens,ones=ones,
+        via_polar(i_hand=i_hand,eights=eights,ones=ones,
           r=outerRad+rad_ofs,theta=theta)
         # Front-side trace from via to left pad
-        trace_polar(i_hand=i_hand,tens=tens,ones=ones,
+        trace_polar(i_hand=i_hand,eights=eights,ones=ones,
           r0=diodeRad        ,theta0=theta+theta_ofs,
           r1=outerRad+rad_ofs,theta1=theta          ,layer="F.Cu")
 
 
 def radials():
     for i_slot in range(60):
-        ones=i_slot%10
-        tens=i_slot//10
+        ones=i_slot%8
+        eights=i_slot//8
         theta0=i_slot*6
         theta1=theta0+1.5
         theta2=theta1+1.5
         thetam=theta0-1.5
         i_ring0=2+ones
-        i_ring1=12+ones
+        i_ring1=10+ones
         i_ring2=1
         i_ringm=0
-        radial(i_hand=0,tens=tens,i_ring=i_ring0,theta=theta0,rad_ofs=0                       ,theta_ofs=-1.2)
-        radial(i_hand=1,tens=tens,i_ring=i_ring1,theta=theta1,rad_ofs=0                       ,theta_ofs= 0  )
+        radial(i_hand=0,eights=eights,i_ring=i_ring0,theta=theta0,rad_ofs=0                       ,theta_ofs=-1.2)
+        radial(i_hand=1,eights=eights,i_ring=i_ring1,theta=theta1,rad_ofs=0                       ,theta_ofs= 0  )
         radial(i_hand=0,ones=ones,i_ring=i_ring2,theta=theta2,rad_ofs=flatDiodeRad-outerViaRad,theta_ofs=-1.5)
         radial(i_hand=1,ones=ones,i_ring=i_ringm,theta=thetam,rad_ofs=0                       ,theta_ofs= 0  )
         pcbnew.Refresh()
 
 
 radials()
-#raise AssertionError("Stop!")
+raise AssertionError("Stop!")
 
 
 def tap(*,i_hand:int,tens:int='x',ones:int='x',slot:int,m:int,hasvia:bool=False,layer:str="B.Cu"):

@@ -483,7 +483,7 @@
     "page_layout_descr_file": ""
   },
   "schematic": {
-    "annotate_start_num": 300,
+    "annotate_start_num": 0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
       "dashed_lines_gap_length_ratio": 3.0,
@@ -517,18 +517,6 @@
     "subpart_id_separator": 0
   },
   "sheets": [
-    [
-      "aa3a436d-dede-46d3-9ed0-c0cd323c7787",
-      "Hour hand"
-    ],
-    [
-      "85d5ea70-0bd0-4beb-863d-47b7b57146b5",
-      "Minute hand"
-    ],
-    [
-      "9f66be35-2744-413f-8b31-a996047a434b",
-      "Top board"
-    ],
     [
       "9151f981-b383-4946-8df4-92ef46ef2206",
       ""
